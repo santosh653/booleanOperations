@@ -11,7 +11,14 @@ env:
 matrix:
   include:
     - python: 3.6
+      arch: amd64
+    - python: 3.6
+      arch: ppc64le
     - python: 3.7
+      arch: amd64
+    - python: 3.7
+      arch: ppc64le
+
       # required to run python3.7 on Travis CI
       # https://github.com/travis-ci/travis-ci/issues/9815
       dist: xenial
